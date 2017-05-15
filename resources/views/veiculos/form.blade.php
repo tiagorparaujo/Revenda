@@ -32,25 +32,25 @@
                         <div class="control-group">
                             <label class="control-label" for="date01">Combustivel</label>
                             <div class="controls">
-                                <input type="text"  name="veiculo[modelo]" id="modelo" class="input-xlarge" >
+                                <input type="text"  name="veiculo[combustivel]" id="combustivel" class="input-xlarge" >
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="date01">Kilometragem</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge " >
+                                <input type="text" name="veiculo[kilometragem]" id="kilometragem"  class="input-xlarge " >
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="date01">Cor</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge " >
+                                <input type="text" name="veiculo[cor]" id="cor" class="input-xlarge " >
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="date01">Valor</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge "  >
+                                <input type="text" name="veiculo[valor]" id="combustivel" class="input-xlarge "  >
                             </div>
                         </div>
                         <div class="form-actions">

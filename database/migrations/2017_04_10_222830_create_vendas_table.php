@@ -17,6 +17,7 @@ class CreateVendasTable extends Migration
             $table->increments('id');
             $table->string('data');
             $table->string('forma_pagamento');
+            $table->timestamps();
         });
     }
 

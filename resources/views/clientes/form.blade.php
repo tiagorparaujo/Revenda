@@ -25,63 +25,63 @@
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Telefone</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[telefone]" id="telefone">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Email</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[email]" id="email">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Documento</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[documento]" id="documento">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Estado</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[estado]" id="estado">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Cidade</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[estado]" id="cidade">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Bairro</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[bairro]" id="bairro">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Rua</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[rua]" id="rua">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Numero</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[numero]" id="numero">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Complemento</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" id="typeahead">
+                                <input type="text" class="span6 typeahead" name="cliente[complemento]" id="complemento">
                             </div>
                         </div>
 

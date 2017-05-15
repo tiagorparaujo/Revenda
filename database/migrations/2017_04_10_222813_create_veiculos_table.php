@@ -18,9 +18,10 @@ class CreateVeiculosTable extends Migration
             $table->string('modelo');
             $table->string('ano');
             $table->string('combustivel');
-            $table->double('kilometragem');
+            $table->string('kilometragem');
             $table->string('cor');
             $table->string('valor');
+            $table->timestamps();
         });
     }
 

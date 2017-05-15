@@ -25,6 +25,7 @@ class CreateClientesTable extends Migration
             $table->string('rua');
             $table->string('numero');
             $table->string('complemento');
+            $table->timestamps();
         });
     }
 

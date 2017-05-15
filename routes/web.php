@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +9,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('layout');
 })->name('home');
@@ -18,9 +16,8 @@ Route::get('/', function () {
 Route::get('/veiculos', 'VeiculosController@index')->name('veiculos');
 Route::match(['post','get'],'/veiculos/create', 'VeiculosController@create')->name('veiculos_cadastrar');
 Route::get('/veiculos/{id}', 'VeiculosController@show');
-Route::get('/veiculos/{id}/update', 'VeiculosController@update');
-Route::get('/veiculos/{id}/delete', 'VeiculosController@delete');
-
+Route::get('/veiculos/{id}/update', 'VeiculosController@update')->name('veiculos_update');
+Route::get('/veiculos/{id}/delete', 'VeiculosController@delete')->name('veiculos_delete');
 
 Route::get('/clientes', 'ClientesController@index')->name('clientes');
 Route::get('/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
