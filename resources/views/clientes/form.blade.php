@@ -13,12 +13,13 @@
                 </div>
             </div>
             <div class="box-content">
-                <form class="form-horizontal">
+                <form class="form-horizontal" action="{{route ('clientes_cadastrar')}}"  method="post">
+                    {{ csrf_field() }}
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Nome</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead ui-datepicker" id="typeahead">
+                                <input type="text" class="span6 typeahead ui-datepicker"  name="cliente[nome]" id="nome">
                             </div>
                         </div>
 
@@ -53,7 +54,7 @@
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Cidade</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[estado]" id="cidade">
+                                <input type="text" class="span6 typeahead" name="cliente[cidade]" id="cidade">
                             </div>
                         </div>
 

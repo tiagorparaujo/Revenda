@@ -20,7 +20,8 @@ Route::get('/veiculos/{id}/update', 'VeiculosController@update')->name('veiculos
 Route::get('/veiculos/{id}/delete', 'VeiculosController@delete')->name('veiculos_delete');
 
 Route::get('/clientes', 'ClientesController@index')->name('clientes');
-Route::get('/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
+Route::match(['post','get'],'/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
+//Route::get('/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
 Route::get('/clientes/{id}', 'ClientesController@show');
 Route::get('/clientes/{id}/update', 'ClientesController@update');
 Route::get('/clientes/{id}/delete', 'ClientesController@delete');
