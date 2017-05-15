@@ -7,7 +7,8 @@
     <title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
     <meta name="description" content="Bootstrap Metro Dashboard">
     <meta name="author" content="Dennis Ji">
-    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <meta name="keyword"
+          content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <!-- end: Meta -->
 
     <!-- start: Mobile Specific -->
@@ -19,7 +20,8 @@
     <link href="{{asset('css/bootstrap-responsive.min.css')}}" rel="stylesheet">
     <link id="base-style" href="{{asset('css/style.css')}}" rel="stylesheet">
     <link id="base-style-responsive" href="{{asset('css/style-responsive.css')}}" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext'
+          rel='stylesheet' type='text/css'>
     <!-- end: CSS -->
 
 
@@ -39,8 +41,6 @@
     <!-- end: Favicon -->
 
 
-
-
 </head>
 
 <body>
@@ -48,12 +48,13 @@
 <div class="navbar">
     <div class="navbar-inner">
         <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+            <a class="btn btn-navbar" data-toggle="collapse"
+               data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="index.html"><span>Metro</span></a>
+            <a class="brand" href="{{route('home')}}"><span>SuperCAR</span></a>
 
             <!-- start: Header Menu -->
             <div class="nav-no-collapse header-nav">
@@ -335,28 +336,49 @@
         <div id="sidebar-left" class="span2">
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
-                    <li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
-                    <li><a href="messages.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
-                    <li><a href="tasks.html"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
-                    <li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li>
-                    <li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Widgets</span></a></li>
                     <li>
-                        <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Dropdown</span><span class="label label-important"> 3 </span></a>
+                        <a class="dropmenu" href="#"><i class="icon-caret-down"></i><span class="hidden-tablet"> Veiculo</span></a>
                         <ul>
-                            <li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>
-                            <li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 2</span></a></li>
-                            <li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 3</span></a></li>
+                            <li><a class="submenu" href="{{route('veiculos_cadastrar')}}"><i class="icon-plus-sign"></i><span
+                                            class="hidden-tablet">Cadastrar Veiculo</span></a></li>
+                            <li><a class="submenu" href="{{route('veiculos')}}"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet">Listar Veiculos</span></a></li>
+
                         </ul>
                     </li>
-                    <li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Forms</span></a></li>
-                    <li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Charts</span></a></li>
-                    <li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Typography</span></a></li>
-                    <li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li>
-                    <li><a href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> Tables</span></a></li>
-                    <li><a href="calendar.html"><i class="icon-calendar"></i><span class="hidden-tablet"> Calendar</span></a></li>
-                    <li><a href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li>
-                    <li><a href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> Icons</span></a></li>
-                    <li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> Login Page</span></a></li>
+
+                    <li>
+                        <a class="dropmenu" href="#"><i class="icon-caret-down"></i><span class="hidden-tablet"> Marcas</span></a>
+                        <ul>
+                            <li><a class="submenu" href="{{route('marcas_cadastrar')}}"><i class="icon-plus-sign"></i><span
+                                            class="hidden-tablet">Cadastrar Marcas</span></a></li>
+                            <li><a class="submenu" href="{{route('marcas')}}"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet">Listar Marcas</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="dropmenu" href="#"><i class="icon-caret-down"></i><span class="hidden-tablet"> Clientes</span></a>
+                        <ul>
+                            <li><a class="submenu" href="{{route('clientes_cadastrar')}}"><i class="icon-plus-sign"></i><span
+                                            class="hidden-tablet">Cadastrar Clientes</span></a></li>
+                            <li><a class="submenu" href="{{route('clientes')}}"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet">Listar Clientes</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="dropmenu" href="#"><i class="icon-caret-down"></i><span class="hidden-tablet"> Vendas</span></a>
+                        <ul>
+                            <li><a class="submenu" href="{{route('vendas_cadastrar')}}"><i class="icon-plus-sign"></i><span
+                                            class="hidden-tablet">Cadastrar Vendas</span></a></li>
+                            <li><a class="submenu" href="{{route('vendas')}}"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet">Listar Vendas</span></a></li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -365,7 +387,8 @@
         <noscript>
             <div class="alert alert-block span10">
                 <h4 class="alert-heading">Warning!</h4>
-                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
             </div>
         </noscript>
 
@@ -399,7 +422,8 @@
 <footer>
 
     <p>
-        <span style="text-align:left;float:left">&copy; 2013 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
+        <span style="text-align:left;float:left">&copy; 2013 <a
+                    href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
 
     </p>
 
@@ -437,6 +461,7 @@
 <script src="{{asset('js/counter.js')}}"></script>
 <script src="{{asset('js/retina.js')}}"></script>
 <script src="{{asset('js/custom.js')}}"></script>
+@yield('scripts')
 <!-- end: JavaScript-->
 
 </body>
