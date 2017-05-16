@@ -19,70 +19,70 @@
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Nome</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead ui-datepicker"  name="cliente[nome]" id="nome">
+                                <input type="text" class="span6 typeahead ui-datepicker" value="{{$cliente->nome}}"  name="cliente[nome]" id="nome">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Telefone</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[telefone]" id="telefone">
+                                <input type="text" class="span6 typeahead" value="{{$cliente->telefone}}" name="cliente[telefone]" id="telefone">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Email</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[email]" id="email">
+                                <input type="text" class="span6 typeahead" value="{{$cliente->email}}" name="cliente[email]" id="email">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Documento</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[documento]" id="documento">
+                                <input type="text" class="span6 typeahead" value="{{$cliente->documento}}" name="cliente[documento]" id="documento">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Estado</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[estado]" id="estado">
+                                <input type="text" value="{{$cliente->estado}}" class="span6 typeahead" name="cliente[estado]" id="estado">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Cidade</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[cidade]" id="cidade">
+                                <input type="text" value="{{$cliente->cidade}}" class="span6 typeahead" name="cliente[cidade]" id="cidade">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Bairro</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[bairro]" id="bairro">
+                                <input type="text" value="{{$cliente->bairro}}" class="span6 typeahead" name="cliente[bairro]" id="bairro">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Rua</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[rua]" id="rua">
+                                <input type="text" value="{{$cliente->rua}}" class="span6 typeahead" name="cliente[rua]" id="rua">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Numero</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[numero]" id="numero">
+                                <input type="text" value="{{$cliente->numero}}" class="span6 typeahead" name="cliente[numero]" id="numero">
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="typeahead">Complemento</label>
                             <div class="controls">
-                                <input type="text" class="span6 typeahead" name="cliente[complemento]" id="complemento">
+                                <input type="text" value="{{$cliente->complemento}}" class="span6 typeahead" name="cliente[complemento]" id="complemento">
                             </div>
                         </div>
 

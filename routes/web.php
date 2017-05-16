@@ -19,12 +19,18 @@ Route::get('/veiculos/{id}', 'VeiculosController@show');
 Route::get('/veiculos/{id}/update', 'VeiculosController@update')->name('veiculos_update');
 Route::get('/veiculos/{id}/delete', 'VeiculosController@delete')->name('veiculos_delete');
 
+
+
+
 Route::get('/clientes', 'ClientesController@index')->name('clientes');
 Route::match(['post','get'],'/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
-//Route::get('/clientes/create', 'ClientesController@create')->name('clientes_cadastrar');
 Route::get('/clientes/{id}', 'ClientesController@show');
-Route::get('/clientes/{id}/update', 'ClientesController@update');
-Route::get('/clientes/{id}/delete', 'ClientesController@delete');
+Route::get('/clientes/{id}/update', 'ClientesController@update')->name('clientes_update');
+Route::get('/clientes/{id}/delete', 'ClientesController@delete')->name('clientes_delete');
+
+
+
+
 
 Route::get('/marcas', 'MarcasController@index')->name('marcas');
 Route::get('/marcas/create', 'MarcasController@create')->name('marcas_cadastrar');
